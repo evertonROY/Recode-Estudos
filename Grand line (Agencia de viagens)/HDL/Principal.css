@@ -1,53 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body {
+    text-align: center;
+}
+  
+  
+/* Set the style of container
+    div element */
+.Container{
+    height: 150px;
+    width: 250px;
+    overflow-y: auto;
+    background-color: green;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+/* Set the effects to the division
+    named content */
+.Content{
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+  
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(220, 233, 231);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 header{
-    background-color: rgb(0, 154, 154);
+    display: flex;
+    background-color: rgb(255, 255, 255);
     height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    font-size: 60px;
 }
 
 nav{
-    background-color: rgb(199, 251, 251);
+    background-color: rgb(31, 147, 147);
     height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+nav > a{
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    text-decoration: none;
+}
 
-main{
-    background-color: rgb(191, 224, 255);
-    padding: 20px;
+.cont-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-img{
+    width: 100%;
 }
 
 .cont-viagem{
-    background-color: wheat;
-    width: 80vw;
-    height: 200px;
+    width: 95vw;
+    height: 350px;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.cont-viagem > div{
+    text-align: center;
+    width: 60vw;
+    margin: 10px;
+    border-radius: 20px;
+    color: rgb(42, 63, 86);
+    
+}
+
+.cont-h2 > h2{
+    color: white;
+}
+
+.cont-form{
+
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+}
+
+.cont-form > div select {
+    background-color: rgba(97, 203, 242, 0.472);
+    margin: 10px;
+   
+    border-radius: 30px;
+}
+
+.cont-form > select{
+    margin-top: 20px;
+}
+
+.inpt-check{
+    display: flex;
+}
+
+.inpt-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-check{
+    margin: 20px;
+}
+
+main{
+    background-color: rgba(31, 147, 147, 0.131);
+    text-align: center;
+}
+
+
+
 .cont-cards{
-    background-color: rgb(151, 151, 151);
-    width: 80vw;
+    background-color: rgba(31, 147, 147, 0.218);
+    width: 95vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px;
+
 }
 
 .card-precos{
-    background-color: white;
-    width: 20%;
-    height: 20vw;
-    margin: 27px;
+
+    margin: 30px;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-precos > img{
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    height: 300px;
     border-radius: 20px;
-    
+    box-shadow: 0px 0px 10px 0px;
+}
+
+
+.inf-cards{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: rgba(4, 4, 4, 0.227);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: dotted;
+}
+
+.fot-img{
+    width: 100%;
 }
 
 footer{
     background-color: rgb(214, 211, 211);
     height: 10vw;
+}
+
+@media(max-width: 700px){
+nav{
+    background-color: rgb(31, 147, 147);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 }
