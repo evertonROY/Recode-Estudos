@@ -7,7 +7,9 @@
 body {
     text-align: center;
 }
-  
+.fot-img{
+    width: 100%;
+}
   
 /* Set the style of container
     div element */
